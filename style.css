@@ -1,0 +1,10 @@
+#Report:has(#Ghost:checked) #GhostSection {
+    display: block;
+  }
+  #Report:has(#Escape:checked) #MagicalAnimalSection {
+    display: block;
+  }
+  body{
+  background-image: url("/Users/megan/Documents/Job search/Tarbay council/hauntedhouse.jpeg");
+  background-color:#ff7518;
+  }
