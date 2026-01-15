@@ -1,55 +1,48 @@
-#Report {
-  border: 10px dotted rgb(45, 213, 171);
-  padding-top: 20px;
-  padding-left:5px;
-}
-#Report:has(#Ghost:checked) #GhostSection {
-    display: block;
-  }
-  #Report:has(#Escape:checked) #MagicalAnimalSection {
-    display: block;
-  }
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /*
-  
-  background-image: url("Haunted house.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 3px snow;
-  border-radius: 5px;
-  */
-  background-color:#ff7518;
-  }
-  form{
-    background-color: blanchedalmond;
-    max-width: max-content;
-    padding: 5px;
-  }
-.formfield{
-  margin-bottom: 5px;
+fieldset {
+	border: 10px dotted rgb(45, 213, 171);
+	padding: 10px;
 }
 
-#fields {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  max-width: max-content;
-  gap: 10px;
+fieldset:has(#Ghost:checked) #GhostSection {
+	display: block;
+}
+
+fieldset:has(#EscapedMagicalAnimal:checked) #MagicalAnimalSection {
+	display: block;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ff7518;
+}
+
+form {
+	background-color: blanchedalmond;
+	max-width: max-content;
+	padding: 5px;
+}
+
+.Field {
+	margin-bottom: 5px;
+}
+
+#Fields {
+	max-width: max-content;
+	gap: 10px;
 }
 
 input {
-  width: 100%;
+	width: 100%;
 }
 
 select {
-  width: 100%;
+	width: 100%;
 }
 
-#submit {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+#Submit {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 }
