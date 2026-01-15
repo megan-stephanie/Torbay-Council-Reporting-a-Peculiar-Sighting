@@ -1,26 +1,44 @@
 <html>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>  
 <form action="https://formsubmit.co/ministerofthesupernatural@yahoo.com"
 method="POST">
   <fieldset id="Report">
-    <legend> Reporting form </legend>
-      <p>
-        <label for="Name"> Name: </label>
-      <input type="text" name="Name" id="Name" required/>
-        <label for="Contact"> Contact detail: </label>
-      <input type="text" name="Contact" id="Contact"/>
+    <legend>Sighting Report Form</legend>
+        <div id="fields">
+        <div class="formfield">
+          <label for="Name"> Name: </label>
+          <br>
+          <input type="text" name="Name" id="Name" required/>
+        </div>
+        <div class="formfield">
+          <label for="Contact"> Contact Details: </label>
+          <br>
+          <input type="text" name="Contact" id="Contact"/>
+        </div>
+        <div class="formfield">
+        <label for="DateTime">Date and Time: </label>
+      <br>
+      <input type="" name="DateTime" id="DateTime" required/>  
+      </div>
+      <div class="formfield">
+         <label for="Location">  Location: </label>
+      <br>
+      <input type="text" name="Location" id="Location" required/>  
+      </div>
+      <div class="formfield">
         <label for="Sighted"> What has been sighted: </label>
-      <select id="Sighted" name="Sighted" required>
+      <br>
+        <select id="Sighted" name="Sighted" required>
         <option value="Ghost" id="Ghost"> Ghost sighting </option>
         <option value="Escape" id="Escape"> Escape magical creature </option>
         </select>
-        <label for="DateTime">
-          Date amd Time: </label>
-      <input type="" name="DateTime" id="DateTime" required/>  
-         <label for="Location">  Location: </label>
-      <input type="text" name="Location" id="Location" required/>  
-    </p>
-  <div id="GhostSection" hidden>
+        </div>
+  <div class="formfield" id="GhostSection" hidden>
+    <label for="GhostType">Type of ghost:</label>
+    <br>
     <select name="GhostType" id="GhostType">
       <option value="Banshee"> Banshee</option>
       <option value="Ghoul"> Ghoul </option>
@@ -31,7 +49,9 @@ method="POST">
       <option value="Wraith"> Wraith </option>
     </select>
   </div>
-<div id="MagicalAnimalSection" hidden>
+<div class="formfield" id="MagicalAnimalSection" hidden>
+    <label for="MagicalAnimal">Type of magical animal:</label>
+    <br>
      <select name="MagicalAnimal" id="MagicalAnimal">
        <option value="Dragon"> Dragon</option>
        <option value="Unicorn"> Unicorn </option>
@@ -39,7 +59,12 @@ method="POST">
        <option value="Griffin"> Griffin </option>
   </select>
    </div>
+   </div>
+   <div id="submit">
 <button type="submit">Send</button>
+    </div>
   </fieldset>
 </form>
+
+</body>
 </html>
